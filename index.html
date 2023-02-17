@@ -12,7 +12,155 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1 class="hidden">ORBITZ Homepage</h1>
+
+    <div id="container">
+
+    <div id="header-con" class="con">
+        <header id="main-header">
+            <h2 class="hidden">Header</h2>
+
+            <div id="header-logo" class="logo">
+                <!-- logo svg goes here once i have the file, this is a placeholder -->
+                <img src="images/pvcjunkie-logo-3.svg" alt="logo">
+            </div>
+
+            <nav id="main-nav" class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="default.html">OUR STORY</a></li>
+                    <li><a href="default.html">CONTACT</a></li>
+                    <li><a href="default.html">SOCIAL</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <h2 class="hidden">Main Page Content</h2>
+
+        <div id="hero-con" class="con">
+            <section id="hero" class="grid">
+                <h2 class="hidden">Hero Section</h2>
+                <!-- add css to titles -->
+                <h3 class="bigtitle">UFOOOH YEAH, ITS BACK!</h3>
+                    <h4 class="subtitle">(ONLY TOOK 25 TRIPS AROUND THE SUN)</h4>
+            </section>
+        </div>
+
+        <div id="flavours-con" class="con">
+            <section id="flavours" class="grid">
+                <h3 class="bigtitle">OUT OF THIS WORLD FLAVOURS</h3>
+
+                <section id="carousel">
+                    <h2 class="hidden">Bottle/flavour carousel</h2>
+                    <!-- idk how to code this rn lol -->
+                    <article id="flavour-name">
+                        <h2 class="subtitle">ROCKETSHIP RASPBERRY</h2>
+                    </article>
+                </section>
+            </section>
+        </div>
+
+        <div id="sugar-con" class="con">
+            <article id="sugar" class="grid">
+                <h2 class="hidden">Promotional Section</h2>
+                <h3 class="bigtitle">ZERO GRAVITY. ZERO SUGAR.</h3>
+                    <h4 class="body">You were a kid in '97 and could handle all the sugar. But many lightyears later, it makes you expand like the universe. So we launched it into space! And, no more black holes in your teeth!</h4>
+            </article>
+        </div>
+
+        <div id="nostaglia-con" class="con">
+            <article id="nostalgia" class="grid">
+                <h2 class="hidden">Another Promotional Section</h2>
+                <h3 class="subtitle">NOSTALGIA NEVER TASTED SO GOOD.</h3>
+                    <h4 class="body">ORBITZ may have been short lived, but the 90's are forever. Take a sip, and experience a blast from the past, perfectly remastered.</h4>
+            </article>
+        </div>
+
+        <div id="contact-con" class="con">
+            <section id="contact">
+                <h2>CONTACT US</h2>
+
+                <section id="contact-form" class="grid">
+                    <h2 class="hidden">Contact Form</h2>
+
+                    <form id="mainform" method="post" action="#">
+            
+                        <label class="hidden" for="name">Name: </label>
+                        <input class= "form-style" id="name" name="name" type="text" placeholder="Name">
+            
+                        <label class="hidden" for="email">Email: </label>
+                        <input class= "form-style" id="email" name="email" type="email" placeholder="Email address">
+
+                        <label class="hidden" for="subject">Subject: </label>
+                        <input class= "form-style" id="subject" name="subject" type="text" placeholder="Subject">
+                                
+                        <label class="hidden" for="message">Message: </label>
+                        <textarea class= "form-style" id="message" name="message">Your message</textarea>
+            
+                        <input id="form-button" type="submit" value="SEND">
+            
+                    </form>
+                </section>
+            </section> 
+        </div>
+
+        <div id="social-con" class="con">
+            <section id="socials" class="grid">
+                <h2 class="hidden">Social Media Links</h2>
+                <h3 class="subtitle">CONNECT WITH US ON SOCIAL MEDIA!</h3>
+                <div id="insta">
+                    <!-- icon goes here -->
+                    <h4>INSTAGRAM</h4>
+                </div>
+                <div id="facebook">
+                    <!-- icon goes here -->
+                    <h4>FACEBOOK</h4>
+                </div>
+                <div id="twitter">
+                    <!-- icon goes here -->
+                    <h4>TWITTER</h4>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <div id="footer-con" class="con">
+        <footer id="footer">
+            <h2 class="hidden">Footer</h2>
+
+            <aside id="footer-newsletter">
+                <h3 class="hidden">Newsletter Sign-Up</h3>
+                <form id="newsletter" method="post" action="#">
+                    <label for="news-email">STAY IN OUR ORBIT!</label>
+                    <input id="news-email" name="email" type="email" placeholder="Email address">
+                    <input id="signup" type="submit" value="SIGN UP">
+                </form>    
+            </aside> 
+
+            <div id="footer-logo" class="logo">
+                <!-- logo svg goes here once i have the file, this is a placeholder -->
+                <img src="images/pvcjunkie-logo-3.svg" alt="logo">
+            </div>
+
+            <nav id="footer-nav" class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="default.html">OUR STORY</a></li>
+                    <li><a href="default.html">CONTACT</a></li>
+                    <li><a href="default.html">SOCIAL</a></li>
+                    <li><a href="default.html">CAREERS</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

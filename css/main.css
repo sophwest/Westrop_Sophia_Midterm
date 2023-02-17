@@ -1,3 +1,56 @@
+/* BASICS */
 body {
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #fff;
 }
+
+.hidden {
+    display: none;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* COMMON ELEMENTS */
+.con {
+    background-color: #2a2a2a;
+}
+
+.nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+.nav li a {
+    color: #fff;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 8em;
+}
+
+
+
+/* HEADER */
+
+/* FOOTER */
