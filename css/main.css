@@ -1,8 +1,33 @@
+.con {
+    background-color: #2a2a2a;
+}
+
+.con2 {
+    background-color: #4b4b4b;
+}
+
+.con3 {
+    background-color: #a5a5a5;
+}
+
+.con4 {
+    background-color: #8d8d8d;
+}
+
+.image {
+    background-color: #afafaf;
+    text-align: center;
+}
+
+
 /* BASICS */
+
 body {
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
     font-size: 36px;
+    font-weight: bold;
     color: #fff;
+    background-color: #2a2a2a;
 }
 
 .hidden {
@@ -10,7 +35,8 @@ body {
 }
 
 #container {
-    max-width: 1200px;
+    /* 1200px messed up my XD numbers so i had to do 1640 oops */
+    max-width: 1640px;
     margin: 0 auto;
 }
 
@@ -18,8 +44,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 122px);
 	grid-column-gap: 16px;
-	padding-left: 140px;
-	padding-right: 140px;
 }
 
 a {
@@ -30,14 +54,13 @@ ul {
 	list-style-type: none;
 }
 
+
 /* COMMON ELEMENTS */
-.con {
-    background-color: #2a2a2a;
-}
 
 .nav li {
 	display: inline;
 	list-style-type: none;
+    margin-left: 50px;
 }
 
 .nav li a {
@@ -49,8 +72,312 @@ ul {
     width: 8em;
 }
 
+.bigtitle {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 65px;
+}
+
+.smalltitle {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.bodytext {
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 36px; 
+    font-weight: bold;
+}
 
 
 /* HEADER */
 
+#header-con {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/* top: 0px;
+	position: sticky;
+	z-index: 10; */
+	height: 160px;
+}
+
+#header-logo {
+    grid-column: 1/3;
+    padding-left: 30px;
+}
+
+#main-nav {
+    grid-column: 4/-1;
+    margin-top: 52px;
+}
+
+
+/* HERO */
+
+#hero-title {
+    grid-column: 1/6;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#hero h3 {
+    margin-top: 100px;
+}
+
+#hero h4 {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#ufo {
+    width: 810px;
+    height: 920px;
+    grid-column: 7/-1;
+    grid-row: 1/1;
+}
+
+
+/* FLAVOURS */
+
+#flavours h3 {
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#bottle-left, #bottle-right {
+    width: 398px;
+    height: 640px;
+}
+
+#bottle-center {
+    width: 463px;
+    height: 760px;
+}
+
+#carousel {
+    grid-column: 1/-1;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#carousel > div {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.arrow {
+    font-size: 60px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    height: 122px;
+    width: 122px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 244px;
+}
+
+#flavour-name {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* SUGAR */
+
+#sugar-con {
+    height: 965px;
+}
+
+#sugar h3 {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 82px;
+}
+
+#sugar h4 {
+    grid-column: 7/-1;
+    margin-top: 60px;
+    padding-right: 30px;
+    line-height: 60px;
+    kerning: 50px;
+}
+
+/* NOSTALGIA */
+
+#alien {
+    width: 398px;
+    height: 140px;
+    grid-column: 8/11;
+    grid-row: 1/1;
+    margin-top: 80px;
+}
+
+#old-bottle {
+    width: 260px;
+    height: 391px;
+    grid-column: 1/3;
+    grid-row: 2/2;
+    margin-top: 77%;
+}
+
+#floppy-disk {
+    width: 260px;
+    height: 195px;
+    grid-row: 2/2;
+    grid-column: 11/-1;
+    margin-top: 152%;
+}
+
+#nostalgia {
+    grid-column: 3/11;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+#nostalgia h3 {
+    padding-bottom: 60px;
+    color:#2a2a2a;
+}
+
+#nostalgia h4 {
+    text-align: left;
+    line-height: 60px;
+    kerning: 50px;
+    padding-bottom: 140px;
+    color:#2a2a2a;
+}
+
+/* CONTACT */
+
+#contact {
+    border: 5px solid #ffffff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#contact h2 {
+    margin-bottom: 60px;
+    color: #2a2a2a;
+}
+
+#contact-form {
+	padding-top: 20px;
+    display: inline-block;
+}
+
+#mainform div {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+/* form elements */
+label {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    color: #2a2a2a;
+}
+
+.form-style {
+	font-family: inherit;
+	font-size: 26px;
+	color: #4b4b4b;
+	border: none;
+	margin-top: 16px;
+	padding: 16px;
+}
+
+.form-style input:focus, textarea:focus, #news-email:focus, #name:focus, #email:focus, #subject:focus {
+	outline: 2px solid #000000;
+}
+
+#name, #email, #subject {
+	width: 618px;
+    align-self: stretch;
+}
+
+textarea {
+    width: 618px;
+    height: 342px;
+    resize: none;
+  }
+
+#form-button {
+    background-color: #2a2a2a;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	display: flex;
+	color: #fff;
+	width: 132px;
+	height: 61px;
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 25px;
+    float: right;
+}
+
+
+/* SOCIALS */
+#socials h3 {
+    grid-column: 1/-1;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #icons > div {
+    margin: 0 10px;
+    text-align: center;
+  }
+
 /* FOOTER */
+
+/* newsletter signup */
+#news-email {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 26px;
+	border: none;
+	margin-top: 60px;
+	padding-left: 20px;
+	width: 674px;
+	height: 80px;
+}
+
+#signup {
+	font-family: inherit;
+	font-size: 26px;
+    background-color:#4b4b4b;
+	color: #fff;
+	width: 260px;
+	height: 80px;
+	border: none;
+}
+
+#footer-nav {
+    grid-column: 1/-1;
+    margin-top: 52px;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 30px;
+}
