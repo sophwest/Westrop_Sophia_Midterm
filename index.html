@@ -17,12 +17,12 @@
     <div id="container">
 
     <div id="header-con" class="con">
-        <header id="main-header">
+        <header id="main-header" class="grid">
             <h2 class="hidden">Header</h2>
 
             <div id="header-logo" class="logo">
                 <!-- logo svg goes here once i have the file, this is a placeholder -->
-                <img src="images/pvcjunkie-logo-3.svg" alt="logo">
+                <img src="images/logo-black.svg" alt="logo">
             </div>
 
             <nav id="main-nav" class="nav">
@@ -42,63 +42,108 @@
 
         <div id="hero-con" class="con">
             <section id="hero" class="grid">
-                <h2 class="hidden">Hero Section</h2>
-                <!-- add css to titles -->
-                <h3 class="bigtitle">UFOOOH YEAH, ITS BACK!</h3>
-                    <h4 class="subtitle">(ONLY TOOK 25 TRIPS AROUND THE SUN)</h4>
+                <div id="hero-title">
+                    <h2 class="hidden">Hero Section</h2>
+                    <!-- add css to titles -->
+                    <h3 class="bigtitle">UFOOOH YEAH,<br>ITS BACK!</h3>
+                    <h4>(ONLY TOOK 25 TRIPS AROUND THE SUN)</h4>
+                </div>
+                <div id="ufo" class="image">
+                    <p>UFO AND BOTTLES</p>
+                </div>
+
             </section>
         </div>
 
         <div id="flavours-con" class="con">
             <section id="flavours" class="grid">
                 <h3 class="bigtitle">OUT OF THIS WORLD FLAVOURS</h3>
-
+                <!-- this will all change once javascript is implemented idk how to do it yet -->
                 <section id="carousel">
                     <h2 class="hidden">Bottle/flavour carousel</h2>
-                    <!-- idk how to code this rn lol -->
-                    <article id="flavour-name">
-                        <h2 class="subtitle">ROCKETSHIP RASPBERRY</h2>
-                    </article>
+
+                    <div id="arrow-left" class="arrow">
+                        <a href="#js-later">◄</a>
+                    </div>
+
+                    <div id="bottle-left" class="image">
+                        <p>bottle carousel</p>
+                    </div>
+
+                    <div id="bottle-center" class="image">
+                        <p>bottle carousel</p>
+                    </div>
+
+                    <div id="bottle-right" class="image">
+                        <p>bottle carousel</p>
+                    </div>
+
+                    <div id="arrow-right" class="arrow">
+                        <a href="#js-later">►</a>
+                    </div>
                 </section>
+
+                <article id="flavour-name">
+                    <h2 class="smalltitle">ROCKETSHIP RASPBERRY</h2>
+                </article>
+
             </section>
         </div>
 
-        <div id="sugar-con" class="con">
+        <div id="sugar-con" class="con2">
             <article id="sugar" class="grid">
                 <h2 class="hidden">Promotional Section</h2>
                 <h3 class="bigtitle">ZERO GRAVITY. ZERO SUGAR.</h3>
-                    <h4 class="body">You were a kid in '97 and could handle all the sugar. But many lightyears later, it makes you expand like the universe. So we launched it into space! And, no more black holes in your teeth!</h4>
+                    <h4 class="bodytext">You were a kid in '97 and could handle all the sugar. But many lightyears later, it makes you expand like the universe. So we launched it into space! And, no more black holes in your teeth!</h4>
             </article>
         </div>
 
-        <div id="nostaglia-con" class="con">
-            <article id="nostalgia" class="grid">
+        <div id="nostaglia-con" class="con4 grid">
+
+            <div id="alien" class="image">
+                <p>cute alien</p>
+            </div>
+
+            <div id="old-bottle" class="image">
+                <p>old orbitz bottle</p>
+            </div>
+
+            <article id="nostalgia" class="con3">
                 <h2 class="hidden">Another Promotional Section</h2>
-                <h3 class="subtitle">NOSTALGIA NEVER TASTED SO GOOD.</h3>
-                    <h4 class="body">ORBITZ may have been short lived, but the 90's are forever. Take a sip, and experience a blast from the past, perfectly remastered.</h4>
+                <h3 class="smalltitle">NOSTALGIA NEVER TASTED SO GOOD.</h3>
+                    <h4 class="bodytext">ORBITZ may have been short lived, but the 90's are forever. Take a sip, and experience a blast from the past, perfectly remastered.</h4>
             </article>
+
+            <div id="floppy-disk" class="image">
+                <p>flooopy disk</p>
+            </div>
+
         </div>
 
-        <div id="contact-con" class="con">
-            <section id="contact">
-                <h2>CONTACT US</h2>
+        <div id="contact-con">
+            <section id="contact" class="con3">
+                <h2 class="bigtitle">CONTACT US</h2>
 
                 <section id="contact-form" class="grid">
                     <h2 class="hidden">Contact Form</h2>
 
                     <form id="mainform" method="post" action="#">
-            
-                        <label class="hidden" for="name">Name: </label>
-                        <input class= "form-style" id="name" name="name" type="text" placeholder="Name">
-            
-                        <label class="hidden" for="email">Email: </label>
-                        <input class= "form-style" id="email" name="email" type="email" placeholder="Email address">
-
-                        <label class="hidden" for="subject">Subject: </label>
-                        <input class= "form-style" id="subject" name="subject" type="text" placeholder="Subject">
-                                
-                        <label class="hidden" for="message">Message: </label>
-                        <textarea class= "form-style" id="message" name="message">Your message</textarea>
+                        <div>
+                            <label for="name">Name: </label>
+                            <input class= "form-style" id="name" name="name" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input class= "form-style" id="email" name="email" type="email" placeholder="Email address">
+                        </div>
+                        <div>
+                            <label for="subject">Subject: </label>
+                            <input class= "form-style" id="subject" name="subject" type="text" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="message">Message: </label>
+                            <textarea class= "form-style" id="message" name="message" placeholder="Your message"></textarea>
+                        </div>       
             
                         <input id="form-button" type="submit" value="SEND">
             
@@ -107,21 +152,23 @@
             </section> 
         </div>
 
-        <div id="social-con" class="con">
+        <div id="social-con" class="con4">
             <section id="socials" class="grid">
                 <h2 class="hidden">Social Media Links</h2>
-                <h3 class="subtitle">CONNECT WITH US ON SOCIAL MEDIA!</h3>
-                <div id="insta">
-                    <!-- icon goes here -->
-                    <h4>INSTAGRAM</h4>
-                </div>
-                <div id="facebook">
-                    <!-- icon goes here -->
-                    <h4>FACEBOOK</h4>
-                </div>
-                <div id="twitter">
-                    <!-- icon goes here -->
-                    <h4>TWITTER</h4>
+                <h3 class="smalltitle">CONNECT WITH US ON SOCIAL MEDIA!</h3>
+                <div id="icons">
+                    <div id="insta">
+                        <!-- icon goes here -->
+                        <h4 class="bodytext">INSTAGRAM</h4>
+                    </div>
+                    <div id="facebook">
+                        <!-- icon goes here -->
+                        <h4 class="bodytext">FACEBOOK</h4>
+                    </div>
+                    <div id="twitter">
+                        <!-- icon goes here -->
+                        <h4 class="bodytext">TWITTER</h4>
+                    </div>
                 </div>
             </section>
         </div>
@@ -135,7 +182,7 @@
             <aside id="footer-newsletter">
                 <h3 class="hidden">Newsletter Sign-Up</h3>
                 <form id="newsletter" method="post" action="#">
-                    <label for="news-email">STAY IN OUR ORBIT!</label>
+                    <label for="news-email">STAY IN OUR ORBIT!</label><br>
                     <input id="news-email" name="email" type="email" placeholder="Email address">
                     <input id="signup" type="submit" value="SIGN UP">
                 </form>    
@@ -143,7 +190,7 @@
 
             <div id="footer-logo" class="logo">
                 <!-- logo svg goes here once i have the file, this is a placeholder -->
-                <img src="images/pvcjunkie-logo-3.svg" alt="logo">
+                <img src="images/logo-black.svg" alt="logo">
             </div>
 
             <nav id="footer-nav" class="nav">
@@ -156,6 +203,8 @@
                     <li><a href="default.html">CAREERS</a></li>
                 </ul>
             </nav>
+
+            <p>&copy; 2023 ORBITZ</p>
         </footer>
     </div>
 
