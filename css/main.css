@@ -335,22 +335,38 @@ textarea {
     grid-column: 1/-1;
     text-align: center;
     color: #000;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 #icons {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   #icons > div {
-    margin: 0 10px;
+    margin: 30px;
     text-align: center;
+    padding-bottom: 50px;
+  }
+
+  #icons img {
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
 /* FOOTER */
 
 /* newsletter signup */
+#footer-newsletter {
+    grid-column: 1/9;
+}
+
+#footer-newsletter h3 {
+    grid-column: 1/5;
+    padding-top: 50px;
+}
+
 #news-email {
 	display: inline-block;
 	font-family: inherit;
@@ -363,13 +379,19 @@ textarea {
 }
 
 #signup {
-	font-family: inherit;
-	font-size: 26px;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+	font-size: 30px;
     background-color:#4b4b4b;
 	color: #fff;
 	width: 260px;
 	height: 80px;
 	border: none;
+}
+
+#footer-logo {
+    grid-column: 9/-1;
+    grid-row: 1/2;
+    margin-top: 100px;
 }
 
 #footer-nav {
@@ -379,5 +401,9 @@ textarea {
 }
 
 #footer p {
+    grid-column: 1/-1;
     font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
