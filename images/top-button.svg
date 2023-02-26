@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="top-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.98 115.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Comfortaa-Bold, Comfortaa;
+        font-size: 45.34px;
+        font-weight: 700;
+        stroke-miterlimit: 10;
+        stroke-width: 3.27px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <text id="top" class="cls-2" transform="translate(1.64 110.1)"><tspan class="cls-3" x="0" y="0">T</tspan><tspan x="27.7" y="0">OP</tspan></text>
+  <polyline id="arow" class="cls-1" points="30.51 26 50.51 4 70.47 26 50.47 4 50.47 56"/>
+</svg>

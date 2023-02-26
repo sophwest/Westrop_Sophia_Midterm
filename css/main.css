@@ -1,25 +1,3 @@
-.con {
-    background-color: #2a2a2a;
-}
-
-.con2 {
-    background-color: #4b4b4b;
-}
-
-.con3 {
-    background-color: #a5a5a5;
-}
-
-.con4 {
-    background-color: #8d8d8d;
-}
-
-.image {
-    background-color: #afafaf;
-    text-align: center;
-}
-
-
 /* BASICS */
 
 body {
@@ -64,8 +42,9 @@ ul {
 }
 
 .nav li a {
-    color: #fff;
+    color: #ffffffc9;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    /* text-shadow: 1px 1px 3px #D7FF8B; */
 }
 
 .logo {
@@ -126,6 +105,7 @@ ul {
 
 #hero h3 {
     margin-top: 100px;
+    text-shadow: 2px 2px 3px #D7FF8B;
 }
 
 #hero h4 {
@@ -145,6 +125,7 @@ ul {
 
 #flavours {
     background-color: #D7FF8B;
+    border-radius: 20px;
 }
 
 #flavours h3 {
@@ -153,9 +134,10 @@ ul {
     padding-top: 60px;
     margin-bottom: 60px;
     color: #000;
+    text-shadow: 3px 3px 3px #69e900;
 }
 
-#bottle-left, #bottle-right {
+/* #bottle-left, #bottle-right {
     width: 398px;
     height: 640px;
 }
@@ -163,7 +145,7 @@ ul {
 #bottle-center {
     width: 463px;
     height: 760px;
-}
+} */
 
 #carousel {
     grid-column: 1/-1;
@@ -197,7 +179,8 @@ ul {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 60px;
-    color: #000;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000;
 }
 
 /* SUGAR */
@@ -211,6 +194,7 @@ ul {
     grid-column: 1/-1;
     text-align: center;
     margin-top: 82px;
+    text-shadow: 3px 3px 4px #ff8afb;
 }
 
 #sugar h4 {
@@ -219,13 +203,14 @@ ul {
     padding-right: 30px;
     line-height: 60px;
     kerning: 50px;
+    text-shadow: 2px 2px 3px #000;
 }
 
 /* NOSTALGIA */
 
 #nostalgia-con {
-    background-image: url(../images/background-90s.jpg);
-    border-radius: 300px;
+    background-image: url(../images/retro-background2.png);
+    border-radius: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -233,14 +218,6 @@ ul {
 #nostalgia {
     background-color: #fff;
     border-radius: 25px;
-}
-
-#nostalgia h2 {
-    color: #e7009a;
-}
-
-#nostaglia h3 {
-    color: #000;
 }
 
 #alien {
@@ -279,7 +256,7 @@ ul {
 
 #nostalgia h3 {
     padding-bottom: 60px;
-    color:#2a2a2a;
+    color:#282956;
 }
 
 #nostalgia h4 {
@@ -294,13 +271,15 @@ ul {
 
 #contact {
     border: 5px solid #ffffff;
+    border-radius: 20px;
     text-align: center;
     padding-top: 60px;
+    background-color: #D7FF8B;
 }
 
 #contact h2 {
-    margin-bottom: 60px;
-    color: #2a2a2a;
+    margin-bottom: 30px;
+    color: #000E20;
 }
 
 #contact-form {
@@ -322,7 +301,7 @@ label {
     text-align: right;
     margin-right: 20px;
     margin-top: 25px;
-    color: #2a2a2a;
+    color: #000E20;
 }
 
 .form-style {
@@ -341,16 +320,18 @@ label {
 #name, #email, #subject {
 	width: 618px;
     align-self: stretch;
+    border-radius: 10px;
 }
 
 textarea {
     width: 618px;
     height: 342px;
     resize: none;
+    border-radius: 10px;
   }
 
 #form-button {
-    background-color: #2a2a2a;
+    background-color: #000E20;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 	font-size: inherit;
 	display: flex;
@@ -361,14 +342,21 @@ textarea {
 	margin-top: 30px;
 	margin-bottom: 25px;
     float: right;
+    border-radius: 10px;
 }
 
 
 /* SOCIALS */
+
+#social-con {
+    background-color: #282956;
+    border-radius: 20px;
+}
+
 #socials h3 {
     grid-column: 1/-1;
     text-align: center;
-    color: #000;
+    color: #ffffff;
     padding-top: 50px;
 }
 
@@ -381,7 +369,6 @@ textarea {
   #icons > div {
     margin: 30px;
     text-align: center;
-    padding-bottom: 50px;
   }
 
   #icons img {
@@ -389,12 +376,23 @@ textarea {
     padding-bottom: 10px;
   }
 
+  #icons a h4 {
+    color: #fff;
+  }
+
+
   .top-button {
     grid-row: 3/4;
     grid-column: 12/-1;
+    width: 50px;
+    padding-bottom: 50px;
 }
 
 /* FOOTER */
+
+#footer-con {
+    background-color: #000E20;
+}
 
 /* newsletter signup */
 #footer-newsletter {
@@ -404,6 +402,7 @@ textarea {
 #footer-newsletter h3 {
     grid-column: 1/5;
     padding-top: 50px;
+    text-shadow: 2px 2px 3px #D7FF8B;
 }
 
 #news-email {
@@ -415,16 +414,18 @@ textarea {
 	padding-left: 20px;
 	width: 674px;
 	height: 80px;
+    border-radius: 10px;
 }
 
 #signup {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 	font-size: 30px;
-    background-color:#4b4b4b;
-	color: #fff;
+    background-color:#D7FF8B;
+	color: #000;
 	width: 260px;
 	height: 80px;
 	border: none;
+    border-radius: 10px;
 }
 
 #footer-logo {
@@ -441,10 +442,11 @@ textarea {
 
 #footer p {
     grid-column: 1/-1;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    color: #ffffff50;
 }
 
 
@@ -463,11 +465,11 @@ textarea {
 #flavours-hero h2 {
     margin-bottom: 55px;
     padding-top: 25px;
+    text-shadow: 2px 2px 3px #D7FF8B;
 }
 
-.bottlepic {
-    width: 318px;
-    height: 603px;
+.bottlepic img {
+border-radius: 20px;
 }
 
 .flavour-title {
