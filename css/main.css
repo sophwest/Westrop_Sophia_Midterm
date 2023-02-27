@@ -32,6 +32,9 @@ ul {
 	list-style-type: none;
 }
 
+img { 
+	border: none; /*Remove border if image is a link*/
+}
 
 /* COMMON ELEMENTS */
 
@@ -44,11 +47,21 @@ ul {
 .nav li a {
     color: #ffffffc9;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
-    /* text-shadow: 1px 1px 3px #D7FF8B; */
+    transition: all 0.3s ease-in-out;
+}
+	
+.nav a:hover { 
+	color:#ffffff;
+    text-shadow: 1px 1px 3px #D7FF8B;
 }
 
 .logo {
     width: 8em;
+    transition: all 0.3s ease-in-out; 
+}
+
+.logo:hover { 
+	transform: scale(1.05);
 }
 
 .bigtitle {
@@ -118,6 +131,11 @@ ul {
     grid-column: 7/-1;
     grid-row: 1/1;
     line-height: 0px;
+	transition: all 0.3s ease;
+}
+
+#ufo:hover {
+	transform: translateY(10px);
 }
 
 
@@ -136,16 +154,6 @@ ul {
     color: #000;
     text-shadow: 3px 3px 3px #69e900;
 }
-
-/* #bottle-left, #bottle-right {
-    width: 398px;
-    height: 640px;
-}
-
-#bottle-center {
-    width: 463px;
-    height: 760px;
-} */
 
 #carousel {
     grid-column: 1/-1;
@@ -171,6 +179,11 @@ ul {
 }
 
 .arrow a {
+    color: #D7FF8B;
+    transition: all 0.3s ease-in-out; 
+}
+
+.arrow a:hover {
     color: #fff;
 }
 
@@ -343,6 +356,12 @@ textarea {
 	margin-bottom: 25px;
     float: right;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#form-button:hover {
+	background-color: #282956;
+    cursor: pointer;
 }
 
 
@@ -364,17 +383,22 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  #icons > div {
+#icons > div {
     margin: 30px;
     text-align: center;
-  }
+}
 
-  #icons img {
+#icons img {
     padding-top: 20px;
     padding-bottom: 10px;
-  }
+	transition: all 0.3s ease-in-out; 
+}
+
+#icons img:hover { 
+	transform: scale(1.05);
+}
 
   #icons a h4 {
     color: #fff;
@@ -386,6 +410,11 @@ textarea {
     grid-column: 12/-1;
     width: 50px;
     padding-bottom: 50px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.top-button:hover {
+    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -417,15 +446,25 @@ textarea {
     border-radius: 10px;
 }
 
+#news-email:focus {
+outline: 2px solid #D7FF8B;
+}
+
 #signup {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 	font-size: 30px;
-    background-color:#D7FF8B;
+    background-color:#cdff70;
 	color: #000;
 	width: 260px;
 	height: 80px;
 	border: none;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out; 
+}
+
+#signup:hover {
+    background-color: #D7FF8B;
+    cursor: pointer;
 }
 
 #footer-logo {
@@ -487,21 +526,21 @@ border-radius: 20px;
 }
 
 #flavours-blurb {
-    padding-top: 50px;
+    margin-top: 50px;    
+    margin-bottom: 50px;
 }
 
 #flavours-blurb p {
     grid-column: 2/12;
     text-align: left;
+    padding: 50px;
+    color: #000E20;
+    line-height: 50px;
+    kerning: 50px;
+    background-color: #D7FF8B;
+    box-shadow: 2px 2px 3px #69e900;
+    border-radius: 20px;
 }
-
-/* FILLER IMAGE */
-
-#filler-image {
-    width: 1920px;
-    height: 650px;
-}
-
 
 
 /* RETAILERS */
@@ -510,13 +549,12 @@ border-radius: 20px;
     grid-column: 1/-1;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .store-logo {
+    margin-bottom: 150px;
     width: 672px;
-    height: 290px;
-    margin-bottom: 90px;
 }
 
 #retailer-logos {
@@ -524,10 +562,14 @@ border-radius: 20px;
 }
 
 #rocketship {
-    width: 538px;
-    height: 1050px;
     grid-column: 8/12;
+    transition: all 0.3s ease;
 }
+
+#rocketship:hover {
+	transform: translateY(-20px);
+}
+
 
 #retailers h3 {
 font-size: 45px;
