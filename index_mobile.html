@@ -9,11 +9,179 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
 </head>
 <body>
     <h1 class="hidden">ORBITZ Homepage</h1>
-    
+
+<div class="container">
+
+    <div id="header-con">
+        <header id="main-header" class="grid">
+            <h2 class="hidden">Header</h2>
+
+            <div id="header-logo" class="logo">
+                <a href="index_mobile.html"><img src="images/logo-white.svg" alt="logo"></a>
+            </div>
+
+            <nav id="mobile-nav">
+                <h2 class="hidden">Main Navigation</h2>
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+             </nav>
+        </header>
+    </div>
+
+    <main>
+        <h2 class="hidden">Main Page Content</h2>
+
+            <section id="hero" class="grid">                    
+                <h2 class="hidden">Hero Section</h2>
+                <div id="hero-title">
+                    <h3 class="bigtitle">UFOOOH YEAH, ITS BACK!</h3>
+                    <h4 class="smalltitle">(ONLY TOOK 25 TRIPS AROUND THE SUN)</h4>
+                </div>
+                <div id="ufo">
+                    <img src="images/mob-ufo.png" alt="ufo with beam taking orbitz bottles">
+                </div>
+
+            </section>
+
+            <section id="flavours" class="grid">
+                <h3 class="bigtitle">OUT OF THIS WORLD FLAVOURS</h3>
+                <!-- this will all change once javascript is implemented idk how to do it yet -->
+                <section id="carousel">
+                    <h2 class="hidden">Bottle/flavour carousel</h2>
+
+                    <div id="arrow-left" class="arrow">
+                        <a href="#js-later">◄</a>
+                    </div>
+
+                    <div id="bottle-center">
+                        <img src="images/mob-flavour-rocketship-raspberry.jpg">
+                    </div>
+
+                    <div id="arrow-right" class="arrow">
+                        <a href="#js-later">►</a>
+                    </div>
+                </section>
+
+                <article id="flavour-name">
+                    <h2 class="smalltitle">ROCKETSHIP RASPBERRY</h2>
+                </article>
+
+            </section>
+
+        <div id="sugar-con">
+            <article id="sugar" class="grid">
+                <h2 class="hidden">Promotional Section</h2>
+                <h3 class="bigtitle">ZERO GRAVITY.<br>ZERO SUGAR.</h3>
+                    <h4 class="bodytext">You were a kid in '97 and could handle all the sugar. But many lightyears later, it makes you expand like the universe. So we launched it into space! And, no more black holes in your teeth!</h4>
+            </article>
+        </div>
+
+        <div id="nostalgia-con" class="grid">
+            
+            <div id="alien">
+                <img src="images/mob-alien.png" alt="lounging green alien">
+            </div>
+
+            <article id="nostalgia">
+                <h2 class="hidden">Another Promotional Section</h2>
+                <h3 class="smalltitle">NOSTALGIA NEVER<br>TASTED SO GOOD.</h3>
+                    <h4 class="bodytext">ORBITZ may have been short lived, but the 90's are forever. Take a sip, and experience a blast from the past, perfectly remastered.</h4>
+            </article>
+
+            <div id="floppy-disk">
+                <img src="images/mob-floppy-disk.png" alt="floppy disk doodle">
+            </div>
+
+        </div>
+
+        <div id="contact-con">
+            <section id="contact">
+                <h2 class="bigtitle">CONTACT US</h2>
+
+                <section id="contact-form" class="grid">
+                    <h2 class="hidden">Contact Form</h2>
+
+                    <form id="mainform" method="post" action="#">
+                        <div>
+                            <label for="name">Name: </label>
+                            <input class= "form-style" id="name" name="name" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input class= "form-style" id="email" name="email" type="email" placeholder="Email address">
+                        </div>
+                        <div>
+                            <label for="subject">Subject: </label>
+                            <input class= "form-style" id="subject" name="subject" type="text" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="message">Message: </label>
+                            <textarea class= "form-style" id="message" name="message" placeholder="Your message"></textarea>
+                        </div>       
+            
+                        <input id="form-button" type="submit" value="SEND">
+            
+                    </form>
+                </section>
+            </section> 
+        </div>
+
+        <div id="social-con">
+            <section id="socials">
+                <h2 class="hidden">Social Media Links</h2>
+                <h3 class="smalltitle">CONNECT WITH US ON SOCIAL MEDIA!</h3>
+                <div id="icons" class="grid">
+                    <div id="insta">
+                        <a href="default.html"><img src="images/logo-instagram-desk.png"></a>
+                        <a href="default.html"><h4 class="bodytext">INSTAGRAM</h4></a>
+                    </div>
+                    <div id="facebook">
+                        <a href="default.html"><img src="images/logo-facebook-desk.png"></a>
+                        <a href="default.html"><h4 class="bodytext">FACEBOOK</h4></a>
+                    </div>
+                    <div id="twitter">
+                        <a href="default.html"><img src="images/logo-twitter-desk.png"></a>
+                        <a href="default.html"><h4 class="bodytext">TWITTER</h4></a>
+                    </div>
+                </div>
+            </section>
+            <div class="grid">
+                <a class="top-button" href="#"><img src="images/top-button.svg" alt="top button"></a>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-con">
+        <footer id="footer" class="grid">
+            <h2 class="hidden">Footer</h2>
+
+            <nav id="footer-nav" class="nav">
+                <ul>
+                    <li><a href="index_mobile.html">HOME</a></li>
+                    <li><a href="products_mobile.html">SHOP</a></li>
+                    <li><a href="default.html">OUR STORY</a></li>
+                    <li><a href="default.html">CONTACT</a></li>
+                    <li><a href="default.html">SOCIAL</a></li>
+                    <li><a href="default.html">CAREERS</a></li>
+                </ul>
+            </nav>
+
+            <div id="footer-logo" class="logo">
+                <a href="index_mobile.html"><img src="images/logo-white.svg" alt="logo"></a>
+            </div>
+
+            <p>&copy; 2023 ORBITZ</p>
+        </footer>
+    </div>
+
+</div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
